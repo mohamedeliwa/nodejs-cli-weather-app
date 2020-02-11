@@ -15,8 +15,8 @@ const geoCode = (address, callback) => {
         callback("Unable to find location, try again with different search term.")
       } else {
         callback(undefined, {
-          latitude: body.features[0].center[0],
-          longitude: body.features[0].center[1],
+          latitude: body.features[0].center[1],
+          longitude: body.features[0].center[0],
           location: body.features[0].place_name
         })
       }
