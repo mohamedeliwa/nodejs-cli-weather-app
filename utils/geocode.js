@@ -1,3 +1,4 @@
+// npm package that allows us to create http requests.
 const request = require("request");
 
 const geoCode = (address, callback) => {
